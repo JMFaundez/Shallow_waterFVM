@@ -3,7 +3,7 @@ function [U1,U2,x,t] = solver(N,c,eps,tf,c0)
 	%   It solves the system of pdes for an initial perturbation
 	% 	at the middle of the the domain.
 	%	INPUTS:
-	% 		N: number of points x direction
+	% 		N: number of elements x direction
 	%		c: ratio between dt and dx
 	%		eps: Height of the perturbation
 	%		tf: Final time

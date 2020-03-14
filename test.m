@@ -2,15 +2,18 @@ clear all
 close all
 
 N = 500;
-c = 0.2;
+c = 0.1;
 eps = 0.1;
 tf = 3;
-c0 = 0.5;
+c0 = 0.1;
 
 [U1,U2,x,t] = solver(N,c,eps,tf,c0);
 [X,T] = meshgrid(x,t);
 figure(2000)
 surf(T,X,U1,'EdgeColor','none')
+xlabel('Time [s]')
+ylabel('x [m]')
+zlabel('h [m]')
 colorbar()
 
 
